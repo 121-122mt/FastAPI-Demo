@@ -11,9 +11,11 @@ spec:
     metadata:
       labels:
         app: ecommerce
-    spec:
+    spec:      
       containers:
       - name: ecommerce
         image: ecommerce-app
+        imagePullSecrets:
+      - name: ecr-secret
         ports:
         - containerPort: 8000
