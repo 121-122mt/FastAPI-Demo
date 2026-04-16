@@ -14,8 +14,10 @@ spec:
     spec:      
       containers:
       - name: ecommerce
-        image: ecommerce-app-app:v1
-        imagePullSecrets:
-      - name: ecr-secret
+        image: 614693539303.dkr.ecr.us-east-1.amazonaws.com/ecommerce-app:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
+
+     imagePullSecrets:
+     - name: ecr-secret
