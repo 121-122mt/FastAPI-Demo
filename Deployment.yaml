@@ -14,7 +14,7 @@ spec:
     spec:      
       containers:
       - name: ecommerce
-        image: ecommerce-app
+        image: ecommerce-app-app:v1
         imagePullSecrets:
       - name: ecr-secret
         ports:
